@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-🌺Hey there! My name is *Saber*.
+🌺Hey there! My name is *Mayawee*.
 
 I can help manage your groups with useful features, feel free to add me to your groups!
 """
@@ -85,17 +85,17 @@ STICKERS = (
 buttons = [
    
     [
-        InlineKeyboardButton(text="📡Updates Channel", url=f"https://t.me/theekshana_official"),
+        InlineKeyboardButton(text="📡Updates Channel", url=f"https://t.me/Mayawee_bot_help"),
         InlineKeyboardButton(
-            text="🖲support Group", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="🖲support Group", url=f"https://t.me/mayawee_songs") 
         ),
     ],
     [
-        InlineKeyboardButton(text="📜Source Code", url=f"https://github.com/imtheekshana126/saber-bot"),
+        InlineKeyboardButton(text="📜owner", url=f"https://t.me/aboutchathura"),
         InlineKeyboardButton(text="❔Help", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="➕Add Saber To Your Groups➕", url=f"t.me/TheSaberBot?startgroup=true"),
+        InlineKeyboardButton(text="➕Add Saber To Your Groups➕", url=f"http://t.me/mayawi_song_bot"),
     ],
 ]
 
@@ -104,7 +104,7 @@ HELP_STRINGS = """
 ʏᴏᴜ ᴄᴀɴ ᴄʜᴏᴏꜱᴇ ᴀɴ ᴏᴘᴛɪᴏɴ ʙᴇʟᴏᴡ, ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴀ ʙᴜᴛᴛᴏɴ..
 ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴀꜱᴋ ᴀɴʏᴛʜɪɴɢ ɪɴ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ"""
 
-START_IMG = "https://telegra.ph/file/63d1ee18f81c92d11210e.mp4"
+START_IMG = "https://telegra.ph/file/99a3fe1dae0fb7e0d667a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Lucifer](t.me/detctective_de) \
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-            START_IMG, caption= "<code>saber is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
+            START_IMG, caption= "<code>Mayawee is Here For You❤\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime            
             ),
             parse_mode=ParseMode.HTML,
@@ -357,7 +357,7 @@ def zaid_about_callback(update, context):
     query = update.callback_query
     if query.data == "zaid_":
         query.message.edit_text(
-            text=""" ℹ️ I am [Saber](t.me/thesaberbot), a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I am [Mayawee](http://t.me/mayawi_song_bot), a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -366,7 +366,7 @@ def zaid_about_callback(update, context):
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_TGN's licensed under the GNU General Public License v3.0_
                  \n❍ Assistant @SaberAssistant.
-                 \nHere is the [💾Repository](https://github.com/imtheekshana126/saber-bot).
+                 \nHere is the [💾Repository](https://t.me/aboutchathura).
                  \n\nIf you have any question about bot, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -393,8 +393,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I am [Robot](t.me/thesaberBot)
-                 \nHere is the [Source Code](https://github.com/Itsunknown-12/TGN-Robot) .""",
+            text=""" Hi..🤗 I am [Robo(http://t.me/mayawi_song_bot)
+                 \nHere is the [Source Code](https://t.me/aboutchathura) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
